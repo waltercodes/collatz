@@ -8,8 +8,9 @@ class Calculator:
     In charge of calculating collatz numbers.
     '''
     
-    def __init__(self, collector):
+    def __init__(self, collector, return_chains = True):
         self.collector = collector
+        self.return_chains = return_chains
     
     def calculate(self, num):
         '''
