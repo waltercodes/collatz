@@ -22,4 +22,6 @@ if __name__ == '__main__':
     for n in range(args.first, args.last):
         #print('{}: {}'.format(n, calculator.calculate(n)))
         chain = calculator.calculate(n)
-        
+    
+    # if we made it this far, the range must be valid
+    print('it looks like the conjecture holds for the range from {} to {}.'.format(args.first, args.last))
